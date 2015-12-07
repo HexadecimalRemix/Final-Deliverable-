@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="B2">
+            <connections>
+                <outlet property="view" destination="u9A-hr-70n" id="vde-KW-t6o"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9A-hr-70n">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Number: 6934-7928-3822" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPm-pF-5Uw">
+                            <rect key="frame" x="22" y="197" width="277" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="jPm-pF-5Uw" secondAttribute="height" multiplier="277:44" id="rcT-4V-gZu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regions Bank" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3D-U8-DVw">
+                            <rect key="frame" x="0.0" y="149" width="320" height="59"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="c3D-U8-DVw" secondAttribute="height" multiplier="320:59" id="Tjv-7m-eKc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Balance: $10,039.62" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nW6-1h-gAU">
+                            <rect key="frame" x="22" y="249" width="277" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="nW6-1h-gAU" secondAttribute="height" multiplier="277:32" id="CDq-bL-e6L"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Type: Bank Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7s-Hb-Zsn">
+                            <rect key="frame" x="50" y="300" width="221" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="V7s-Hb-Zsn" secondAttribute="height" multiplier="221:21" id="MS6-JU-9Z2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.47450980390000003" green="0.80784313730000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="nW6-1h-gAU" secondAttribute="trailing" constant="21" id="23G-fK-cTv"/>
+                        <constraint firstItem="nW6-1h-gAU" firstAttribute="top" secondItem="jPm-pF-5Uw" secondAttribute="bottom" constant="8" id="KUB-hp-McQ"/>
+                        <constraint firstAttribute="trailing" secondItem="jPm-pF-5Uw" secondAttribute="trailing" constant="21" id="KxQ-aI-eir"/>
+                        <constraint firstAttribute="trailing" secondItem="V7s-Hb-Zsn" secondAttribute="trailing" constant="49" id="RuZ-mQ-15b"/>
+                        <constraint firstItem="V7s-Hb-Zsn" firstAttribute="top" secondItem="nW6-1h-gAU" secondAttribute="bottom" constant="19" id="ZgP-7x-LSl"/>
+                        <constraint firstItem="V7s-Hb-Zsn" firstAttribute="leading" secondItem="u9A-hr-70n" secondAttribute="leading" constant="50" id="a4d-4a-ZAo"/>
+                        <constraint firstItem="jPm-pF-5Uw" firstAttribute="leading" secondItem="u9A-hr-70n" secondAttribute="leading" constant="22" id="hYp-EJ-rAg"/>
+                        <constraint firstItem="c3D-U8-DVw" firstAttribute="leading" secondItem="u9A-hr-70n" secondAttribute="leading" id="hwy-Og-6Xv"/>
+                        <constraint firstItem="nW6-1h-gAU" firstAttribute="top" secondItem="c3D-U8-DVw" secondAttribute="bottom" constant="41" id="kKy-pJ-b8U"/>
+                        <constraint firstAttribute="bottom" secondItem="V7s-Hb-Zsn" secondAttribute="bottom" constant="247" id="khy-zI-xFy"/>
+                        <constraint firstItem="jPm-pF-5Uw" firstAttribute="top" secondItem="u9A-hr-70n" secondAttribute="top" constant="197" id="mFL-vf-bta"/>
+                        <constraint firstItem="c3D-U8-DVw" firstAttribute="top" secondItem="u9A-hr-70n" secondAttribute="top" constant="149" id="tYV-g2-OWN"/>
+                        <constraint firstItem="nW6-1h-gAU" firstAttribute="leading" secondItem="u9A-hr-70n" secondAttribute="leading" constant="22" id="ugC-Sz-o2A"/>
+                        <constraint firstAttribute="trailing" secondItem="c3D-U8-DVw" secondAttribute="trailing" id="zeG-2H-wUA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="u9A-hr-70n" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="G8X-Z7-Fe5"/>
+                <constraint firstAttribute="bottom" secondItem="u9A-hr-70n" secondAttribute="bottom" id="K3I-pd-6C4"/>
+                <constraint firstItem="u9A-hr-70n" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RkZ-S8-t17"/>
+                <constraint firstAttribute="trailing" secondItem="u9A-hr-70n" secondAttribute="trailing" id="Sal-eZ-1O3"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

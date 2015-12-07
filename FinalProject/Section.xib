@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Section">
+            <connections>
+                <outlet property="expenseAdded" destination="XGn-wO-M4i" id="Cs3-Iq-0F7"/>
+                <outlet property="expenseAllow" destination="o2g-5S-Dij" id="8DL-kt-PfD"/>
+                <outlet property="expenseNet" destination="P4T-nt-cpq" id="3L8-4C-YJ5"/>
+                <outlet property="expenseScroll" destination="OMy-Mr-NCF" id="2LR-ah-Dld"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ya1-94-4yG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" alpha="0.94999999999999996" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OMy-Mr-NCF">
+                    <rect key="frame" x="0.0" y="275" width="320" height="293"/>
+                    <color key="backgroundColor" red="0.47450980392156861" green="0.80784313725490198" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="OMy-Mr-NCF" secondAttribute="height" multiplier="320:293" id="2AO-vk-xh4"/>
+                        <constraint firstAttribute="height" constant="293" id="f7u-Zt-khx"/>
+                        <constraint firstAttribute="width" secondItem="OMy-Mr-NCF" secondAttribute="height" multiplier="320:377" id="z0a-XD-AsS"/>
+                    </constraints>
+                    <color key="sectionIndexBackgroundColor" red="0.47450980392156861" green="0.80784313725490198" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="2AO-vk-xh4"/>
+                            <exclude reference="z0a-XD-AsS"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="oKp-i5-msO"/>
+                        <outlet property="delegate" destination="-1" id="Fwg-a8-zGg"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGb-XE-D6D">
+                    <rect key="frame" x="42" y="240" width="237" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.50196078431372548" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="yGb-XE-D6D" secondAttribute="height" multiplier="79:10" id="D6B-Jr-Jso"/>
+                        <constraint firstAttribute="width" secondItem="yGb-XE-D6D" secondAttribute="height" multiplier="79:10" id="YGK-i6-Rhm"/>
+                    </constraints>
+                    <state key="normal" title="Add Expense">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="YGK-i6-Rhm"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="addExpense" destination="-1" eventType="touchUpInside" id="Dr3-Kj-nG0"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Available Section Allowance: $0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4T-nt-cpq">
+                    <rect key="frame" x="18" y="189" width="284" height="33"/>
+                    <color key="backgroundColor" white="0.76691524621212126" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Section Allowance: $0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2g-5S-Dij">
+                    <rect key="frame" x="18" y="92" width="284" height="31"/>
+                    <color key="backgroundColor" red="0.78823529411764703" green="0.78823529411764703" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Section Expenses: $0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGn-wO-M4i">
+                    <rect key="frame" x="18" y="143" width="284" height="30"/>
+                    <color key="backgroundColor" red="0.78823529411764703" green="0.78823529411764703" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.24313725490196078" green="0.27058823529411763" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="OMy-Mr-NCF" secondAttribute="bottom" id="8yD-SB-m2e"/>
+                <constraint firstItem="yGb-XE-D6D" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="42" id="BWr-Xh-v8g"/>
+                <constraint firstItem="OMy-Mr-NCF" firstAttribute="top" secondItem="yGb-XE-D6D" secondAttribute="bottom" constant="8" id="CIi-k4-S1U"/>
+                <constraint firstItem="OMy-Mr-NCF" firstAttribute="top" secondItem="yGb-XE-D6D" secondAttribute="bottom" constant="5" id="OYd-jx-CYX"/>
+                <constraint firstAttribute="trailing" secondItem="yGb-XE-D6D" secondAttribute="trailing" constant="41" id="Oqi-uE-L8k"/>
+                <constraint firstItem="yGb-XE-D6D" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="41" id="TtU-fl-RGr"/>
+                <constraint firstAttribute="trailing" secondItem="OMy-Mr-NCF" secondAttribute="trailing" id="WXQ-At-Aw8"/>
+                <constraint firstAttribute="trailing" secondItem="yGb-XE-D6D" secondAttribute="trailing" constant="41" id="Wyr-E5-FlV"/>
+                <constraint firstItem="OMy-Mr-NCF" firstAttribute="top" secondItem="yGb-XE-D6D" secondAttribute="bottom" constant="36" id="ZP6-AZ-721"/>
+                <constraint firstItem="OMy-Mr-NCF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aeP-kS-zvf"/>
+                <constraint firstAttribute="trailing" secondItem="OMy-Mr-NCF" secondAttribute="trailing" id="fQT-OJ-CXa"/>
+                <constraint firstItem="OMy-Mr-NCF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="peh-sx-6q7"/>
+                <constraint firstItem="yGb-XE-D6D" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="125" id="t21-Kg-WMA"/>
+                <constraint firstAttribute="bottom" secondItem="OMy-Mr-NCF" secondAttribute="bottom" id="u7J-1o-wTd"/>
+                <constraint firstItem="yGb-XE-D6D" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="125" id="uvm-5r-A47"/>
+                <constraint firstItem="yGb-XE-D6D" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="42" id="vNO-x0-m29"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="BWr-Xh-v8g"/>
+                    <exclude reference="TtU-fl-RGr"/>
+                    <exclude reference="Wyr-E5-FlV"/>
+                    <exclude reference="t21-Kg-WMA"/>
+                    <exclude reference="uvm-5r-A47"/>
+                    <exclude reference="8yD-SB-m2e"/>
+                    <exclude reference="CIi-k4-S1U"/>
+                    <exclude reference="ZP6-AZ-721"/>
+                    <exclude reference="aeP-kS-zvf"/>
+                    <exclude reference="fQT-OJ-CXa"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

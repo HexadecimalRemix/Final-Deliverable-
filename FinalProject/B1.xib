@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="B1">
+            <connections>
+                <outlet property="BBVA" destination="Xcn-aW-rJl" id="Ung-qv-7a9"/>
+                <outlet property="view" destination="iN0-l3-epB" id="maF-KF-zQS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xcn-aW-rJl">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Number: 8904-3928-3822" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEn-MZ-U3q">
+                            <rect key="frame" x="22" y="197" width="277" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="MEn-MZ-U3q" secondAttribute="height" multiplier="277:44" id="E5f-g7-DeK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BBVA Compass" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaA-Ht-MBm">
+                            <rect key="frame" x="0.0" y="149" width="320" height="59"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="VaA-Ht-MBm" secondAttribute="height" multiplier="320:59" id="egd-Kf-qSM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Balance: $937.22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWA-WD-gv6">
+                            <rect key="frame" x="22" y="249" width="277" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="aWA-WD-gv6" secondAttribute="height" multiplier="277:32" id="Dfe-xf-StZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Type: Bank Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pk6-A2-G5Z">
+                            <rect key="frame" x="50" y="300" width="221" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Pk6-A2-G5Z" secondAttribute="height" multiplier="221:21" id="eM3-Ew-cDH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.47450980390000003" green="0.80784313730000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="aWA-WD-gv6" firstAttribute="leading" secondItem="Xcn-aW-rJl" secondAttribute="leading" constant="22" id="7KB-qV-mVG"/>
+                        <constraint firstAttribute="trailing" secondItem="MEn-MZ-U3q" secondAttribute="trailing" constant="21" id="AHQ-j7-YTf"/>
+                        <constraint firstItem="Pk6-A2-G5Z" firstAttribute="leading" secondItem="Xcn-aW-rJl" secondAttribute="leading" constant="50" id="AXP-TS-bj9"/>
+                        <constraint firstItem="aWA-WD-gv6" firstAttribute="top" secondItem="MEn-MZ-U3q" secondAttribute="bottom" constant="8" id="AkY-eV-Ret"/>
+                        <constraint firstItem="MEn-MZ-U3q" firstAttribute="leading" secondItem="Xcn-aW-rJl" secondAttribute="leading" constant="22" id="BTV-kI-anY"/>
+                        <constraint firstItem="Pk6-A2-G5Z" firstAttribute="top" secondItem="aWA-WD-gv6" secondAttribute="bottom" constant="19" id="MZV-2w-LNq"/>
+                        <constraint firstItem="MEn-MZ-U3q" firstAttribute="top" secondItem="Xcn-aW-rJl" secondAttribute="top" constant="197" id="TXd-Aa-Ccn"/>
+                        <constraint firstAttribute="trailing" secondItem="VaA-Ht-MBm" secondAttribute="trailing" id="XJd-a7-GL1"/>
+                        <constraint firstItem="aWA-WD-gv6" firstAttribute="top" secondItem="VaA-Ht-MBm" secondAttribute="bottom" constant="41" id="YjF-bx-nEM"/>
+                        <constraint firstAttribute="bottom" secondItem="Pk6-A2-G5Z" secondAttribute="bottom" constant="247" id="ZLc-nu-25t"/>
+                        <constraint firstItem="VaA-Ht-MBm" firstAttribute="top" secondItem="Xcn-aW-rJl" secondAttribute="top" constant="149" id="dHI-Iu-JIP"/>
+                        <constraint firstAttribute="trailing" secondItem="Pk6-A2-G5Z" secondAttribute="trailing" constant="49" id="fQG-1C-Ixv"/>
+                        <constraint firstItem="VaA-Ht-MBm" firstAttribute="leading" secondItem="Xcn-aW-rJl" secondAttribute="leading" id="nrL-yj-sOh"/>
+                        <constraint firstAttribute="trailing" secondItem="aWA-WD-gv6" secondAttribute="trailing" constant="21" id="ore-is-R3A"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Xcn-aW-rJl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1qB-Ms-1zG"/>
+                <constraint firstItem="Xcn-aW-rJl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VeP-zA-Ii7"/>
+                <constraint firstAttribute="trailing" secondItem="Xcn-aW-rJl" secondAttribute="trailing" id="iLI-Cg-lu2"/>
+                <constraint firstAttribute="bottom" secondItem="Xcn-aW-rJl" secondAttribute="bottom" id="ydJ-Li-KZW"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

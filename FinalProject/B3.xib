@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="B3">
+            <connections>
+                <outlet property="view" destination="0jw-rM-XrY" id="FjQ-KR-xsT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jw-rM-XrY">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Number: 3904-3928-3822" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72y-Gc-J6f">
+                            <rect key="frame" x="22" y="197" width="277" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="72y-Gc-J6f" secondAttribute="height" multiplier="277:44" id="F2c-fg-ODq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visa" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2h-2d-nkq">
+                            <rect key="frame" x="0.0" y="149" width="320" height="59"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="U2h-2d-nkq" secondAttribute="height" multiplier="320:59" id="bQx-iQ-olg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Balance: $337.52" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPB-ah-KPt">
+                            <rect key="frame" x="22" y="249" width="277" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="NPB-ah-KPt" secondAttribute="height" multiplier="277:32" id="lqu-4t-RW8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Type: Credit Card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYE-2J-9Gi">
+                            <rect key="frame" x="50" y="300" width="221" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="dYE-2J-9Gi" secondAttribute="height" multiplier="221:21" id="BJM-2B-Itl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.47450980390000003" green="0.80784313730000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="72y-Gc-J6f" secondAttribute="trailing" constant="21" id="0tf-Ft-GRv"/>
+                        <constraint firstAttribute="bottom" secondItem="dYE-2J-9Gi" secondAttribute="bottom" constant="247" id="1FZ-Vp-9tz"/>
+                        <constraint firstItem="NPB-ah-KPt" firstAttribute="leading" secondItem="0jw-rM-XrY" secondAttribute="leading" constant="22" id="2Vs-ML-LVx"/>
+                        <constraint firstItem="dYE-2J-9Gi" firstAttribute="leading" secondItem="0jw-rM-XrY" secondAttribute="leading" constant="50" id="4Xr-rg-Jts"/>
+                        <constraint firstItem="NPB-ah-KPt" firstAttribute="top" secondItem="72y-Gc-J6f" secondAttribute="bottom" constant="8" id="EVs-Tf-zis"/>
+                        <constraint firstAttribute="trailing" secondItem="dYE-2J-9Gi" secondAttribute="trailing" constant="49" id="ULH-Du-w7R"/>
+                        <constraint firstItem="dYE-2J-9Gi" firstAttribute="top" secondItem="NPB-ah-KPt" secondAttribute="bottom" constant="19" id="UTs-yx-i7q"/>
+                        <constraint firstAttribute="trailing" secondItem="U2h-2d-nkq" secondAttribute="trailing" id="V9e-dB-WXW"/>
+                        <constraint firstItem="U2h-2d-nkq" firstAttribute="leading" secondItem="0jw-rM-XrY" secondAttribute="leading" id="XQI-j2-LMy"/>
+                        <constraint firstItem="72y-Gc-J6f" firstAttribute="top" secondItem="0jw-rM-XrY" secondAttribute="top" constant="197" id="XeZ-8l-rJo"/>
+                        <constraint firstItem="NPB-ah-KPt" firstAttribute="top" secondItem="U2h-2d-nkq" secondAttribute="bottom" constant="41" id="Yf1-Mq-6Vk"/>
+                        <constraint firstItem="U2h-2d-nkq" firstAttribute="top" secondItem="0jw-rM-XrY" secondAttribute="top" constant="149" id="m5C-ol-YnP"/>
+                        <constraint firstItem="72y-Gc-J6f" firstAttribute="leading" secondItem="0jw-rM-XrY" secondAttribute="leading" constant="22" id="sgp-jc-5r1"/>
+                        <constraint firstAttribute="trailing" secondItem="NPB-ah-KPt" secondAttribute="trailing" constant="21" id="wD8-q5-8ft"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0jw-rM-XrY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Fax-kh-WFJ"/>
+                <constraint firstAttribute="bottom" secondItem="0jw-rM-XrY" secondAttribute="bottom" id="I7g-MH-63W"/>
+                <constraint firstItem="0jw-rM-XrY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OX9-xj-c0S"/>
+                <constraint firstAttribute="trailing" secondItem="0jw-rM-XrY" secondAttribute="trailing" id="ZOJ-x6-571"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

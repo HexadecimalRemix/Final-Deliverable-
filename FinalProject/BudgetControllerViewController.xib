@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BudgetControllerViewController">
+            <connections>
+                <outlet property="sectionScroll" destination="Y8b-0l-rSq" id="ZeE-Rk-XMX"/>
+                <outlet property="totalAv" destination="VHq-Cx-NP1" id="pgI-Ve-eVm"/>
+                <outlet property="totalEx" destination="8aA-He-jpD" id="DD6-Ju-dW5"/>
+                <outlet property="totalIn" destination="hvh-IM-7Eo" id="zuN-rg-zJ2"/>
+                <outlet property="view" destination="iN0-l3-epB" id="OGf-Kc-Rk1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Expenses: $0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aA-He-jpD">
+                    <rect key="frame" x="23" y="94" width="274" height="28"/>
+                    <color key="backgroundColor" red="0.78823529411764703" green="0.78823529411764703" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="8aA-He-jpD" secondAttribute="height" multiplier="137:21" id="Adb-oS-mx0"/>
+                        <constraint firstAttribute="width" secondItem="8aA-He-jpD" secondAttribute="height" multiplier="137:14" id="FaX-j6-Ynw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Adb-oS-mx0"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Income: $0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvh-IM-7Eo">
+                    <rect key="frame" x="23" y="130" width="274" height="27"/>
+                    <color key="backgroundColor" white="0.7886363636363638" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="hvh-IM-7Eo" secondAttribute="height" multiplier="274:27" id="qsT-O0-UBp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y8b-0l-rSq">
+                    <rect key="frame" x="0.0" y="307" width="320" height="261"/>
+                    <color key="backgroundColor" red="0.47450980392156861" green="0.80784313725490198" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Y8b-0l-rSq" secondAttribute="height" multiplier="320:261" id="Zjc-E1-tLh"/>
+                        <constraint firstAttribute="width" secondItem="Y8b-0l-rSq" secondAttribute="height" multiplier="80:63" id="mnI-fp-yj1"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="mnI-fp-yj1"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Glq-8p-CCo"/>
+                        <outlet property="delegate" destination="-1" id="ruD-F8-8SF"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Funds: $0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHq-Cx-NP1">
+                    <rect key="frame" x="23" y="165" width="274" height="32"/>
+                    <color key="backgroundColor" white="0.7886363636363638" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="VHq-Cx-NP1" secondAttribute="height" multiplier="137:16" id="4ak-c1-53E"/>
+                        <constraint firstAttribute="width" secondItem="VHq-Cx-NP1" secondAttribute="height" multiplier="137:19" id="Uvi-p5-2Gm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Uvi-p5-2Gm"/>
+                        </mask>
+                    </variation>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCr-NV-yO7">
+                    <rect key="frame" x="0.0" y="279" width="320" height="28"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1c-ZC-ZWw">
+                            <rect key="frame" x="0.0" y="0.0" width="160" height="28"/>
+                            <color key="backgroundColor" red="0.058823529411764705" green="0.52156862745098043" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="x1c-ZC-ZWw" secondAttribute="height" multiplier="40:7" id="euV-9F-Ce8"/>
+                                <constraint firstAttribute="width" secondItem="x1c-ZC-ZWw" secondAttribute="height" multiplier="40:7" id="iqa-fq-jkJ"/>
+                            </constraints>
+                            <state key="normal" title="View Income">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="euV-9F-Ce8"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="viewIncome:" destination="-1" eventType="touchUpInside" id="AcE-Cq-cTZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azh-4x-kub">
+                            <rect key="frame" x="160" y="0.0" width="160" height="28"/>
+                            <color key="backgroundColor" red="0.47450980390000003" green="0.80784313730000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Azh-4x-kub" secondAttribute="height" multiplier="16:3" id="BXh-gE-2y9"/>
+                            </constraints>
+                            <state key="normal" title="View Sections">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="BXh-gE-2y9"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="viewSections:" destination="-1" eventType="touchUpInside" id="BeW-bm-PNv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Azh-4x-kub" firstAttribute="top" secondItem="ZCr-NV-yO7" secondAttribute="top" id="5zH-LL-B6i"/>
+                        <constraint firstItem="Azh-4x-kub" firstAttribute="leading" secondItem="x1c-ZC-ZWw" secondAttribute="trailing" id="8zG-gF-dWX"/>
+                        <constraint firstAttribute="width" secondItem="ZCr-NV-yO7" secondAttribute="height" multiplier="80:7" id="ITa-D3-V0R"/>
+                        <constraint firstAttribute="trailing" secondItem="Azh-4x-kub" secondAttribute="trailing" id="P9n-Uv-ByO"/>
+                        <constraint firstItem="Azh-4x-kub" firstAttribute="leading" secondItem="x1c-ZC-ZWw" secondAttribute="trailing" id="WWT-zF-aoY"/>
+                        <constraint firstAttribute="bottom" secondItem="x1c-ZC-ZWw" secondAttribute="bottom" id="mYB-md-BNP"/>
+                        <constraint firstItem="x1c-ZC-ZWw" firstAttribute="leading" secondItem="ZCr-NV-yO7" secondAttribute="leading" id="pF4-NG-lm5"/>
+                        <constraint firstAttribute="bottom" secondItem="Azh-4x-kub" secondAttribute="bottom" id="pij-28-ZR1"/>
+                        <constraint firstItem="x1c-ZC-ZWw" firstAttribute="top" secondItem="ZCr-NV-yO7" secondAttribute="top" id="spb-Z9-hji"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jau-Jp-4e8">
+                    <rect key="frame" x="89" y="207" width="142" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.50196078431372548" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Jau-Jp-4e8" secondAttribute="height" multiplier="71:15" id="ubS-Mk-aaQ"/>
+                    </constraints>
+                    <state key="normal" title="Add Income">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addIncome:" destination="-1" eventType="touchUpInside" id="xnk-L1-8Gb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acV-wk-a1p">
+                    <rect key="frame" x="89" y="241" width="142" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.50196078431372548" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="acV-wk-a1p" secondAttribute="height" multiplier="71:15" id="PmZ-mW-nYI"/>
+                    </constraints>
+                    <state key="normal" title="Add Section">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addBudgetSection:" destination="-1" eventType="touchUpInside" id="neP-zD-Khf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.24313725490196078" green="0.27058823529411763" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="8aA-He-jpD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="94" id="5nl-ho-v1T"/>
+                <constraint firstAttribute="trailing" secondItem="acV-wk-a1p" secondAttribute="trailing" constant="89" id="7qZ-CJ-cqN"/>
+                <constraint firstItem="ZCr-NV-yO7" firstAttribute="top" secondItem="acV-wk-a1p" secondAttribute="bottom" constant="8" id="Acp-0n-9tz"/>
+                <constraint firstAttribute="bottom" secondItem="Y8b-0l-rSq" secondAttribute="bottom" id="E8z-be-m3c"/>
+                <constraint firstAttribute="trailing" secondItem="8aA-He-jpD" secondAttribute="trailing" constant="23" id="J7X-Z8-pgF"/>
+                <constraint firstAttribute="trailing" secondItem="VHq-Cx-NP1" secondAttribute="trailing" constant="23" id="L2b-ml-vfv"/>
+                <constraint firstItem="ZCr-NV-yO7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="L7X-6X-syx"/>
+                <constraint firstItem="8aA-He-jpD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="23" id="MvO-lw-jMM"/>
+                <constraint firstItem="acV-wk-a1p" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="89" id="NWa-gG-IK6"/>
+                <constraint firstItem="Jau-Jp-4e8" firstAttribute="top" secondItem="VHq-Cx-NP1" secondAttribute="bottom" constant="10" id="OIz-jv-kaO"/>
+                <constraint firstItem="Y8b-0l-rSq" firstAttribute="top" secondItem="VHq-Cx-NP1" secondAttribute="bottom" constant="22" id="PYZ-za-f88"/>
+                <constraint firstItem="acV-wk-a1p" firstAttribute="top" secondItem="Jau-Jp-4e8" secondAttribute="bottom" constant="4" id="RME-iR-p0W"/>
+                <constraint firstAttribute="trailing" secondItem="ZCr-NV-yO7" secondAttribute="trailing" id="Sdn-qe-x0C"/>
+                <constraint firstItem="VHq-Cx-NP1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="23" id="Ypv-kA-vYZ"/>
+                <constraint firstAttribute="trailing" secondItem="hvh-IM-7Eo" secondAttribute="trailing" constant="23" id="ZyN-Cd-y8o"/>
+                <constraint firstItem="hvh-IM-7Eo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="23" id="bMa-JC-GeG"/>
+                <constraint firstAttribute="trailing" secondItem="Y8b-0l-rSq" secondAttribute="trailing" id="bNb-lc-OMi"/>
+                <constraint firstItem="Y8b-0l-rSq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ctk-6A-JwP"/>
+                <constraint firstItem="Jau-Jp-4e8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="89" id="ja3-vK-bof"/>
+                <constraint firstItem="Y8b-0l-rSq" firstAttribute="top" secondItem="ZCr-NV-yO7" secondAttribute="bottom" id="m3v-px-Vi9"/>
+                <constraint firstAttribute="trailing" secondItem="Jau-Jp-4e8" secondAttribute="trailing" constant="89" id="nKB-al-kNh"/>
+                <constraint firstItem="VHq-Cx-NP1" firstAttribute="top" secondItem="hvh-IM-7Eo" secondAttribute="bottom" constant="8" id="tPT-S9-J4V"/>
+                <constraint firstItem="hvh-IM-7Eo" firstAttribute="top" secondItem="8aA-He-jpD" secondAttribute="bottom" constant="8" id="tRb-0m-CZZ"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="PYZ-za-f88"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

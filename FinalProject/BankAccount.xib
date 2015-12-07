@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BankAccount">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="Jz4-mX-fSe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Accounts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXp-Ih-5Gl">
+                    <rect key="frame" x="0.0" y="159" width="320" height="45"/>
+                    <color key="backgroundColor" white="0.95909090909090911" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="cXp-Ih-5Gl" secondAttribute="height" multiplier="64:9" id="JMF-UP-9RI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F5U-hx-VcO">
+                    <rect key="frame" x="40" y="255" width="240" height="247"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLG-tP-Xln">
+                            <rect key="frame" x="8" y="100" width="224" height="47"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="bLG-tP-Xln" secondAttribute="height" multiplier="224:47" id="alc-Dd-s4a"/>
+                            </constraints>
+                            <state key="normal" title="Visa: XXXX- 8543"/>
+                            <connections>
+                                <action selector="gotToVisa:" destination="-1" eventType="touchUpInside" id="Qgu-LZ-vAh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqv-5H-KGd">
+                            <rect key="frame" x="8" y="179" width="224" height="48"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Xqv-5H-KGd" secondAttribute="height" multiplier="14:3" id="51n-XQ-tor"/>
+                            </constraints>
+                            <state key="normal" title="Regions Bank: XXXX -4532"/>
+                            <connections>
+                                <action selector="gotToTegions:" destination="-1" eventType="touchUpInside" id="gsF-NL-V6O"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXE-N4-fs6">
+                            <rect key="frame" x="8" y="24" width="224" height="47"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="dXE-N4-fs6" secondAttribute="height" multiplier="224:47" id="kFg-It-rXp"/>
+                            </constraints>
+                            <state key="normal" title="BBVA Compass: XXXX - 9878"/>
+                            <connections>
+                                <action selector="gotToBBVA:" destination="-1" eventType="touchUpInside" id="HEI-mV-Ghm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Xqv-5H-KGd" secondAttribute="trailing" constant="8" id="DHD-Is-oKV"/>
+                        <constraint firstItem="Xqv-5H-KGd" firstAttribute="top" secondItem="bLG-tP-Xln" secondAttribute="bottom" constant="32" id="Gc0-a0-yZn"/>
+                        <constraint firstItem="dXE-N4-fs6" firstAttribute="top" secondItem="F5U-hx-VcO" secondAttribute="top" constant="24" id="IcK-tN-9dr"/>
+                        <constraint firstItem="bLG-tP-Xln" firstAttribute="leading" secondItem="F5U-hx-VcO" secondAttribute="leading" constant="8" id="N2T-8A-X8d"/>
+                        <constraint firstAttribute="bottom" secondItem="Xqv-5H-KGd" secondAttribute="bottom" constant="20" id="NNx-KL-v0N"/>
+                        <constraint firstAttribute="width" secondItem="F5U-hx-VcO" secondAttribute="height" multiplier="240:247" id="Vsj-t3-ovF"/>
+                        <constraint firstItem="dXE-N4-fs6" firstAttribute="leading" secondItem="F5U-hx-VcO" secondAttribute="leading" constant="8" id="b9i-C7-NUI"/>
+                        <constraint firstAttribute="trailing" secondItem="dXE-N4-fs6" secondAttribute="trailing" constant="8" id="gIe-J1-RL6"/>
+                        <constraint firstAttribute="trailing" secondItem="bLG-tP-Xln" secondAttribute="trailing" constant="8" id="iC6-Ab-WAX"/>
+                        <constraint firstItem="bLG-tP-Xln" firstAttribute="top" secondItem="dXE-N4-fs6" secondAttribute="bottom" constant="29" id="sMP-Hh-0LM"/>
+                        <constraint firstItem="Xqv-5H-KGd" firstAttribute="leading" secondItem="F5U-hx-VcO" secondAttribute="leading" constant="8" id="zLv-hJ-OhY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="F5U-hx-VcO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="78f-yL-PjY"/>
+                <constraint firstAttribute="trailing" secondItem="F5U-hx-VcO" secondAttribute="trailing" constant="40" id="9iL-um-LiX"/>
+                <constraint firstAttribute="trailing" secondItem="cXp-Ih-5Gl" secondAttribute="trailing" id="IE0-hZ-Q0B"/>
+                <constraint firstItem="cXp-Ih-5Gl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LW4-5H-BdN"/>
+                <constraint firstAttribute="bottom" secondItem="F5U-hx-VcO" secondAttribute="bottom" constant="66" id="OPx-dS-uHc"/>
+                <constraint firstItem="cXp-Ih-5Gl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="159" id="m1i-VL-2te"/>
+                <constraint firstItem="F5U-hx-VcO" firstAttribute="top" secondItem="cXp-Ih-5Gl" secondAttribute="bottom" constant="51" id="xrA-iq-G1x"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
